@@ -22,9 +22,7 @@ public abstract class Vehicle implements Rentable, Comparable<Vehicle>  {
         return dailyRate * days;
     }
 
-    public void start() {
-        System.out.println(make + " " + model + " is starting!");
-    }
+    public abstract void start();
 
     public boolean equals(Vehicle other) {
         return this.vehicleID.equals(other.vehicleID);
